@@ -1,12 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>First page</title>
-</head>
-<body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+      <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .row { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .row { height: 1%; }
+  .row { display: block; }
 
-<img src="../recipegrandcafe/index.png" width="100px" height="100px">
+body{
+  color: white;
+  font-size: 30px;
 
-</body>
+}
+.header{
+margin-bottom: 10px;
+}
+
+.inner-header{
+  background: #f78002;
+  height:230px;
+}
+
+
+.content{
+width: 75%;
+float: left;
+}
+
+.inner-content{
+  background: #f78002;
+  height:400px;
+}
+
+.sidebar{
+width: 25%;
+float: left;
+padding-right:10px;
+}
+
+.inner-sidebar{
+  background: #f78002;
+  height:400px;
+  text-align: center;
+
+}
+
+.footer{
+margin-top: 10px;
+}
+
+.inner-footer{
+  background: #f78002;
+  height:200px;
+}
+     </style>
+  <title>Home</title>
+
+  </head>
+  <body>
+
+
+<div class="wrapper">
+
+<div class="header">
+  <div class="inner-header">шапка</div>
+</div>
+  <div class="row">
+    <div class="sidebar">
+      <div class="inner-sidebar">
+        <a>сайдбар</a>
+        <p>tag</p>
+        <p>tag</p>
+        <p>tag</p>
+        <p>tag</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="inner-content">контент</div>
+    </div>
+    </div>
+
+<div class="footer">
+  <div class="inner-footer">футер</div>
+</div>
+
+</div>
+
+  </body>
 </html>

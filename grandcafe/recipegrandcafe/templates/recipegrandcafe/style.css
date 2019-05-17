@@ -1,0 +1,61 @@
+
+* {
+  box-sizing: border-box;
+}
+.row:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  .row { display: inline-block; }
+  /* start commented backslash hack \*/
+  * html .row { height: 1%; }
+  .row { display: block; }
+
+body{
+  color: white;
+  font-size: 30px;
+
+}
+.header{
+margin-bottom: 10px;
+}
+
+.inner-header{
+  background: url(/home/gordon/HTML/GrandCafe.jpg)no-repeat;
+  height:230px;
+}
+
+
+.content{
+width: 70%;
+float: left;
+}
+
+.inner-content{
+  background: #f78002;
+  height:200px;
+}
+
+.sidebar{
+width: 30%;
+float: left;
+padding-right:10px;
+}
+
+.inner-sidebar{
+  background: #f78002;
+  height:200px;
+}
+
+.footer{
+margin-top: 10px;
+}
+
+.inner-footer{
+  background: #f78002;
+  height:200px;
+}
