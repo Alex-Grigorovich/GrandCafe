@@ -5,6 +5,7 @@
       <style type="text/css">
 * {
   box-sizing: border-box;
+  background: url(index.png)
 }
 .row:after {
     visibility: hidden;
@@ -108,7 +109,8 @@ margin-top: 10px;
         <p>tag</p>
         <p>tag</p>
         <p>tag</p>
-        <p>tag</p>
+        <p>{% load static %}
+<img src="{% static "recipegrandcafe/index.png" %}" alt="My image"></p>
       </div>
     </div>
 
